@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:componentDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" componentVar="comp" definition="private"
+                 xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
+    <af:panelLabelAndMessage id="plam1" label="#{attrs.label}">
+        <af:panelGroupLayout id="pgl2" layout="horizontal">
+            <af:inputText id="dc_it1" value="#{attrs.label}" simple="true"/>
+            <af:outputText id="dc_ot1" value="%"/>
+        </af:panelGroupLayout>
+    </af:panelLabelAndMessage>    
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>PercentageComponent</afc:display-name>
+            <afc:attribute>
+                <afc:attribute-name>label</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:attribute>
+                <afc:attribute-name>value</afc:attribute-name>
+                <afc:attribute-class>java.lang.String</afc:attribute-class>
+            </afc:attribute>
+            <afc:component-extension>
+                <afc:component-tag-namespace>component</afc:component-tag-namespace>
+                <afc:component-taglib-uri>www.agose.in</afc:component-taglib-uri>
+            </afc:component-extension>
+        </afc:component>
+    </af:xmlContent>
+</af:componentDef>
