@@ -3,7 +3,7 @@
                  xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
     <af:panelLabelAndMessage id="plam1" label="#{attrs.label}">
         <af:panelGroupLayout id="pgl2" layout="horizontal">
-            <af:inputText id="dc_it1" value="#{attrs.label}" simple="true"/>
+            <af:inputText id="dc_it1" value="#{attrs.value}" simple="true"/>
             <af:outputText id="dc_ot1" value="%"/>
         </af:panelGroupLayout>
     </af:panelLabelAndMessage>    
